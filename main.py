@@ -1,6 +1,6 @@
 import scanner 
-print("Smart Organizer starting...")
 def main()
-    print("Smart Organizer v0.1")
+    files = scanner.scan_folder(".")
+    print(files)
 if __name__ == "__main__":
     main()
