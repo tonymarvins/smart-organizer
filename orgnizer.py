@@ -4,3 +4,6 @@
 
 import os
 from utils import log_message
+
+def organize file(path):
+    log-message("Organizer initialized")
