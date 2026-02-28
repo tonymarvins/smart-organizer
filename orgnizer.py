@@ -31,3 +31,8 @@ for f in files:
         os.makedirs(folder_path, exist_ok=True)
         os.rename(os.path.join(path, f), os.path.join(folder_path, f))
         log_message(f"Moved {f} to Code")
+
+try:
+    pass
+except Exception as e:
+    log_message(f"Error moving {f}: {e}")
