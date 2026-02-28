@@ -21,7 +21,7 @@ def main():
 
     log_message(f"Python files: {py_files}")
 
-   
+       #keyword search
     keyword = input("\nEnter keyword to search files (or leave empty): ")
     if keyword:
         results = scanner.search_files(files, keyword)
