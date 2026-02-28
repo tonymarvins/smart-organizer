@@ -17,7 +17,7 @@ for f in files:
         os.makedirs(folder_path, exist_ok=True)
         os.rename(os.path.join(path, f), os.path.join(folder_path, f))
         log_message(f"Moved {f} to Documents")
-
+ # add Images folder
 for f in files:
     if f.endswith((".jpg", ".png", ".jpeg")):
         folder_path = os.path.join(path, "Images")
