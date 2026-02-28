@@ -29,3 +29,10 @@ def search_files(files, keyword):
     Returns files containing the keyword in name
     """
     return [f for f in files if keyword.lower() in f.lower()]
+keyword = input("\nEnter keyword to search files (or leave empty): ")
+if keyword:
+    results = scanner.search_files(files, keyword)
+    print("\nSearch results:")
+    for r in results:
+        print("->", r)
+    log_message(f"Search results: {results}")
