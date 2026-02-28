@@ -29,6 +29,11 @@ def main():
         for r in results:
             print("->", r)
         log_message(f"Search results: {results}")
+    organize_choice = input("\nDo you want to organize files into folders by type? (y/n): ")
+    if organize_choice.lower() == "y":
+    import organizer
+    organizer.organize_files(".")
+    log_message("Files organized successfully")
 
     print("\nScan complete. See scan.log for full details.")
 
