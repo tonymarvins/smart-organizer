@@ -1,11 +1,8 @@
-import logging
 def setup_logger():
-    logging.basicConfig(
-        filename="scan.log",
-        level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s"
-    )
+    with open("scan.log", "w") as f:
+        f.write("=== Scan Started ===\n")
 
-def log_message(msg):
-    print("[LOG]", msg)
-    logging.info(msg)
+
+def log_message(message):
+    with open("scan.log", "a") as f:
+        f.write(message + "\n")
