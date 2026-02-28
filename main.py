@@ -15,7 +15,7 @@ def main():
     print("\nPython files in folder:")
     for f in py_files:
         print("->", f)
-        
+        #folder statistics
     count, size = scanner.file_statistics(files)
     print(f"\nTotal files: {count}, Total size: {size} bytes")
 
