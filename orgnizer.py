@@ -24,3 +24,10 @@ for f in files:
         os.makedirs(folder_path, exist_ok=True)
         os.rename(os.path.join(path, f), os.path.join(folder_path, f))
         log_message(f"Moved {f} to Images")
+
+for f in files:
+    if f.endswith((".py", ".js", ".cpp")):
+        folder_path = os.path.join(path, "Code")
+        os.makedirs(folder_path, exist_ok=True)
+        os.rename(os.path.join(path, f), os.path.join(folder_path, f))
+        log_message(f"Moved {f} to Code")
