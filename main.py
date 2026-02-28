@@ -25,6 +25,6 @@ if keyword:
     for r in results:
         print("->", r)
     log_message(f"Search results: {results}")
-
+  print("\nScan complete. See scan.log for full details.")
 if __name__ == "__main__":
     main()
