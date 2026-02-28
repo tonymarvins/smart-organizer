@@ -6,6 +6,10 @@ def main():
 
     for f in files:
         print("Found:", f)
-
+    # Filter only .py files for now
+    py_files = scanner.filter_by_extension(files, ['.py'])
+    print("\nPython files in folder:")
+    for f in py_files:
+    print("->", f)
 if __name__ == "__main__":
     main()
