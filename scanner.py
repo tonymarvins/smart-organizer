@@ -24,3 +24,8 @@ def file_statistics(files):
         if os.path.isfile(f):
             total_size += os.path.getsize(f)
     return len(files), total_size
+def search_files(files, keyword):
+    """
+    Returns files containing the keyword in name
+    """
+    return [f for f in files if keyword.lower() in f.lower()]
