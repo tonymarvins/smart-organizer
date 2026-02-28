@@ -17,5 +17,6 @@ def main():
 
     count, size = scanner.file_statistics(files)
     print(f"\nTotal files: {count}, Total size: {size} bytes")
+   log_message(f"Python files: {py_files}")
 if __name__ == "__main__":
     main()
