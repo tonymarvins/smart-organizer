@@ -10,7 +10,7 @@ def organize file(path):
     log-message("Organizer initialized")
     files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
     log_message(f"Found {len(files)} files to organize")
-
+# simple move: create "Documents" folder for .txt files
  for f in files:
     if f.endswith(".txt"):
         folder_path = os.path.join(path, "Documents")
