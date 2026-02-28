@@ -10,7 +10,7 @@ def main():
 
     for f in files:
         print("Found:", f)
-
+        #filter only .py files
     py_files = scanner.filter_by_extension(files, ['.py'])
     print("\nPython files in folder:")
     for f in py_files:
