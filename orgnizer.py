@@ -6,4 +6,5 @@ import os
 from utils import log_message
 
 def organize file(path):
+    """Stub function for organizing files"""
     log-message("Organizer initialized")
