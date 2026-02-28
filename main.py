@@ -1,6 +1,8 @@
 import scanner
-
+from utils import setup_logger, log_message
 def main():
+    setup_logger()
+    log_message("smart Scanner started")
     files = scanner.scan_folder(".")
     print("Scanning current folder...\n")
 
