@@ -18,5 +18,13 @@ def main():
     count, size = scanner.file_statistics(files)
     print(f"\nTotal files: {count}, Total size: {size} bytes")
    log_message(f"Python files: {py_files}")
+keyword = input("\nEnter keyword to search files (or leave empty): ")
+if keyword:
+    results = scanner.search_files(files, keyword)
+    print("\nSearch results:")
+    for r in results:
+        print("->", r)
+    log_message(f"Search results: {results}")
+
 if __name__ == "__main__":
     main()
