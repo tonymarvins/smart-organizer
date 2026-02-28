@@ -1,6 +1,11 @@
 import scanner
 from utils import setup_logger, log_message
-
+import sys
+auto_organize = "--organize" in sys.argv
+if auto_organize:
+    import organizer
+    organizer.organize_files(".")
+    log_message("Files automatically organized via CLI argument")
 def main():
     setup_logger()
     log_message("Smart Scanner started")
