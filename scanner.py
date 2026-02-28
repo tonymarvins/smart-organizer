@@ -6,6 +6,9 @@ def scan_folder(path):
     except Exception as e:
         print("Scan error:", e)
          return []
+    from utils import log_message
+    for f in files:
+    log_message(f"Found file: {f}")
 def filter_by_extension(files, extensions):
     """
     Return only files that match given extensions.
